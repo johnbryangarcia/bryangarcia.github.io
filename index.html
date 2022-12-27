@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bryan's Creative Portfolio</title>
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://kit.fontawesome.com/a5c9fce646.js" crossorigin="anonymous"></script>
+</head>
+
+   <div id="header">
+			<div class="container">
+				<nav>
+					<img src="images/logo.png" class="logo">
+					<ul id="sidemenu">
+						<li><a class ="active" href="#header">Home</a></li>
+						<li><a class ="active" href="#about">About</a></li>
+						<li><a class ="active" href="#services">Services</a></li>
+						<li><a class ="active" href="#portfolio">Portfolio</a></li>
+						<li><a class ="active" href="#contact">Contact</a></li>
+						<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+					</ul>
+					<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+				</nav>
+				<div class="header-text">
+					<p>UI/UX Designer</p>
+					<h1>Hi, I am <span> John Bryan </span><br> Garcia from Philippines</h1>
+				</div>
+			</div>
+		</div>
+
+   <!-- ----------about---------- -->
+
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="images/user.png">
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About Me</h1>
+						<p>
+                     I am a Frontend developer and an undergraduate student taking up Bachelor of Science in Information Systems. I am flexible and cooperative when it comes to handling projects. I am experienced in windows and web development with Microsoft technologies using HTML, CSS, JavaScript and PHP. I have developed front-end and back-end websites since my first year in college, and have been working with websites my relatives own.                     
+						</p>
+
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">
+								Skills</p>
+							<p class="tab-links" onclick="opentab('experience')">Experience
+							</p>
+							<p class="tab-links" onclick="opentab('education')">Education
+							</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<div class="skills">
+                        <div class="skills-bar">
+                          <div class="bar">
+                            <div class="info">
+                              <span>HTML</span>
+                            </div>
+                            <div class="progress-line"><span class="html"></span></div>
+                            <div class="bar">
+                              <div class="info">
+                                <span>CSS</span>
+                              </div>
+                              <div class="progress-line"><span class="css"></span></div>
+                              <div class="bar">
+                                <div class="info">
+                                  <span>BOOTSTRAP</span>
+                                </div>
+                                <div class="progress-line"><span class="bootstrap"></span></div>
+                                <div class="bar">
+                                  <div class="info">
+                                    <span>JAVASCRIPT</span>
+                                  </div>
+                                  <div class="progress-line">
+                                    <span class="javascript"></span>
+                                  </div>
+                                  <div class="bar">
+                                    <div class="info">
+                                      <span>C PROGRAMMING</span>
+                                    </div>
+                                    <div class="progress-line"><span class="c"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li><span>2021 - Current</span><br>UI/UX design Training
+									at ET Institute</li>
+								<li><span>2019 - 2021</span><br>Team lead at StarApp
+									LLC.</li>
+								<li><span>2017 - 2019</span><br>UI/UX Design Executive
+									at Coin Digital Ltd.</li>
+								<li><span>2016 - 2017</span><br>Internship at ekart
+									eCommerce.</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li><span>2016</span><br>UX/UI Desgin Training at ET
+									Institute</li>
+								<li><span>2016</span><br>MBA from MIT Bangalore</li>
+								<li><span>2014</span><br>BBA from ISM Bangalore</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+   <!-- ----------services---------- -->
+
+      <div id="services">
+         <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+               <div>
+                  <i class="fa-sharp fa-solid fa-code"></i>
+                  <h2>Web Design</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                     elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua.</p>
+                  <a href="#">Learn more</a>
+               </div>
+               <div>
+                  <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                  <h2>UI/UX Design</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                     elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua.</p>
+                  <a href="#">Learn more</a>
+               </div>
+               <div>
+                  <i class="fa-brands fa-app-store"></i>
+                  <h2>App Design</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                     elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua.</p>
+                  <a href="#">Learn more</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   
+   <!-- ----------portfolio--------- -->
+
+      <div id="portfolio">
+         <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+               <div class="work">
+                  <img src="images/work-1.png">
+                  <div class="layer">
+                     <h3>Social Media App</h3>
+                     <p>The app connects you the talented people around the world. Download it from play store.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                  </div>
+               </div>
+               <div class="work">
+                  <img src="images/work-2.png">
+                  <div class="layer">
+                     <h3>Music App</h3>
+                     <p>The app connects you the talented people around the world. Download it from play store.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                  </div>				
+               </div>
+               <div class="work">
+                  <img src="images/work-3.png">
+                  <div class="layer">
+                     <h3>Online Shopping App</h3>
+                     <p>The app connects you the talented people around the world. Download it from play store.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                  </div>				
+               </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+         </div>
+      </div>
+
+   <!-- ----------contact---------- -->
+
+      <div id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fa-solid fa-envelope"></i>info.bryangarcia@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>(+63) 945-473-4886</p>
+                  <div class="social-icons">
+                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://https://www.linkedin.com/in/john-bryan-garcia//"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                  <a href="images/John Bryan Garcia Resume.pdf" download class="btn btn2">Download CV</a>
+               </div>
+               <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                     <input type="text" name="Name" placeholder="Your Name" required>
+                     <input type="email" name="Email" placeholder="Your Email" required>
+                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <p>Copyright © Bryan. Made by <i class="fa-solid fa-ghost"></i> John Bryan Garcia</p>
+         </div>
+      </div>
+
+      <script>
+
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
+
+         function opentab(tabname) {
+            for (tablink of tablinks) {
+               tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+               tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         }
+
+      </script> 
+
+      <script>
+
+         var sidemeu = document.getElementById("sidemenu");
+
+         function openmenu() {
+            sidemeu.style.right = "0";
+         }
+         function closemenu() {
+            sidemeu.style.right = "-200px";
+         }
+
+
+      </script>
+
+      <script>
+
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbwsn_F8hlT0OFClbGILVR_M6lGjpLUfhtsiupMKjV8Y7WefDnXGg82l5g-r0pTb4MYh/exec'
+         const form = document.forms['submit-to-google-sheet']
+         const msg = document.getElementById("msg")
+      
+         form.addEventListener('submit', e => {
+         e.preventDefault()
+         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+               msg.innerHTML = "Message sent successfully"
+               setTimeout(function() {
+                  msg.innerHTML =  ""
+               },5000)
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+         })
+
+      </script>
+
+      <script>
+
+         window.onscroll = function() {myFunction()};
+         
+         var navbar = document.getElementById("container");
+         var sticky = navbar.offsetTop;
+         
+         function myFunction() {
+         if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+         } else {
+            navbar.classList.remove("sticky");
+         }
+         }
+
+      </script>
+
+</body>
+</html>
