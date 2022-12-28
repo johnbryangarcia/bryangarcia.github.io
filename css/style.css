@@ -17,7 +17,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/background.png);
+  background-image: url(../images/header1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -64,7 +64,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #00FFFF;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -86,7 +86,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: #ff004f;
+  color: #00FFFF;
 }
 
 /* ----------about---------- */
@@ -138,7 +138,7 @@ nav ul li a:hover::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #00FFFF;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -155,7 +155,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  color: #ff004f;
+  color: #00FFFF;
   font-size: 14px;
 }
 
@@ -166,6 +166,115 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
   
+}
+
+/* ---------- skills bar ----------- */
+
+.skills {
+  position: relative;
+  top: 120px;
+  left: 450px;
+  transform: translate(-50%, -50%);
+}
+
+.skills-bar .bar {
+  margin: 15px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #f0f0f0;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #00FFFF;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform: uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 80%;
+}
+.progress-line .bootstrap {
+  width: 80%;
+}
+.progress-line .javascript {
+  width: 35%;
+}
+.progress-line .c {
+  width: 40%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #006f6f;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #006f6f;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "80%";
+}
+.progress-line .bootstrap::after {
+  content: "80%";
+}
+.progress-line .javascript::after {
+  content: "35%";
+}
+.progress-line .c::after {
+  content: "40%";
 }
 
 /* ----------services---------- */
@@ -210,7 +319,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-	background: #ff004f;
+	background: #00FFFF;
 	transform: translateY(-10px);
 }
 
@@ -243,7 +352,7 @@ nav ul li a:hover::after {
 .layer {
 	width: 100%;
 	height: 0;
-	background: linear-gradient(rgb(0,0,0,0.6), #ff004f);
+	background: linear-gradient(rgb(0,0,0,0.6), #00FFFF);
 	border-radius: 10px;
 	position: absolute;
 	left: 0;
@@ -266,7 +375,7 @@ nav ul li a:hover::after {
 
 .layer a {
 	margin-top: 20px;
-	color: #ff004f;
+	color: #00FFFF;
 	text-decoration: none;
 	font-size: 18px;
 	line-height: 60px;
@@ -289,7 +398,7 @@ nav ul li a:hover::after {
 	display: block;
 	margin: 50px auto;
 	width: fit-content;
-	border: 1px solid #ff004f;
+	border: 1px solid #00FFFF;
 	padding: 14px 50px;
 	border-radius: 6px;
 	text-decoration: none;
@@ -298,7 +407,7 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-	background: #ff004f;
+	background: #00FFFF;
 }
 
 /* ---------contact---------- */
@@ -316,7 +425,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-  color: #ff004f;
+  color: #00FFFF;
   margin-right: 15px;
   font-size: 25px; 
 }
@@ -335,7 +444,7 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-  color: #ff004f;
+  color: #00FFFF;
   transform: translateY(-5px);
 }
 
@@ -345,7 +454,7 @@ nav ul li a:hover::after {
 }
 
 .btn.btn2:hover {
-  background: #ff004f;
+  background: #00FFFF;
 }
 
 .contact-right form {
@@ -381,7 +490,7 @@ form .btn2 {
 }
 
 .copyright i {
-  color: #ff004f;
+  color: #00FFFF;
 }
 
 /* ----------css for mobile--------- */
@@ -413,7 +522,7 @@ nav .fa-solid {
   }
 
   nav ul {
-    background: #ff004f;
+    background: #00FFFF;
     position: fixed;
     top: 0;
     right: -200px;
@@ -426,7 +535,7 @@ nav .fa-solid {
 
   nav ul li {
     display: inline-block;
-    margin: 25px;
+    margin: 26px;
   }
 
   nav ul .fa-solid {
@@ -465,6 +574,42 @@ nav .fa-solid {
     font-size: 14px;
   }
 
+  .skills{
+    margin-top: -10px;
+    margin-left: -300px;
+    width: 100%;
+  }
+  
+  .skills-bar .bar .progress-line{
+    width: 100%;
+  }
+
+  .bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 50;
+    top: -14px;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-style: #f0f0f0;
+    border-top-color: #006f6f;
+  }
+  
+  .bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #f0f0f0;
+    font-size: 12px;
+    font-weight: 700;
+    background: #006f6f;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+
 }
 
 #msg {
@@ -472,125 +617,3 @@ nav .fa-solid {
   margin-top: -40px;
   display: block;
 }
-
-/* ---------- skills bar ----------- */
-
-.skills {
-  position: relative;
-  top: 120px;
-  left: 450px;
-  transform: translate(-50%, -50%);
-}
-
-.skills-bar .bar {
-  margin: 15px 0;
-}
-
-.skills-bar .bar .info span {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.skills-bar .bar .info {
-  margin-bottom: 8px;
-  color: #f0f0f0;
-}
-
-.skills-bar .bar .progress-line {
-  position: relative;
-  height: 10px;
-  width: 550px;
-  background: #f0f0f0;
-  border-radius: 10px;
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-.bar .progress-line span {
-  position: absolute;
-  background: #ff004f;
-  height: 100%;
-  border-radius: 10px;
-  transform: scaleX(0);
-  transform-origin: left;
-  text-transform: uppercase;
-  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.progress-line .html {
-  width: 80%;
-}
-.progress-line .css {
-  width: 80%;
-}
-.progress-line .bootstrap {
-  width: 80%;
-}
-.progress-line .javascript {
-  width: 35%;
-}
-.progress-line .c {
-  width: 40%;
-}
-
-.bar .progress-line span::before {
-  position: absolute;
-  content: "";
-  height: 0;
-  right: 0;
-  top: -14px;
-  width: 0;
-  border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-style: #f0f0f0;
-  border-top-color: #ff004f;
-}
-
-.bar .progress-line span::after {
-  position: absolute;
-  right: 0;
-  top: -28px;
-  color: #ff004f;
-  font-size: 12px;
-  font-weight: 700;
-  background: #f0f0f0;
-  padding: 1px 8px;
-  border-radius: 3px;
-}
-
-
-.progress-line .html::after {
-  content: "80%";
-}
-.progress-line .css::after {
-  content: "80%";
-}
-.progress-line .bootstrap::after {
-  content: "80%";
-}
-.progress-line .javascript::after {
-  content: "35%";
-}
-.progress-line .c::after {
-  content: "40%";
-}
-
-/* ////........Media Query........//// */
-
-@media (max-width: 700px) {
-    .skills{
-        width: 80%;
-    }
-
-    .skills-bar .bar .progress-line{
-        width: 100%;
-    }
-}      
