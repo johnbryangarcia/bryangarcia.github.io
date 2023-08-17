@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<div lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,10 +14,10 @@
 			<div class="container">
 				<nav>
 					<img src="images/logo1.png" class="logo">
-					<ul id="sidemenu">
+					<ul id="sidemenu" style="font-weight: bold;">
 						<li><a class ="active" href="#header">Home</a></li>
 						<li><a class ="active" href="#about">About</a></li>
-						<!-- <li><a class ="active" href="#services">Services</a></li> -->
+						<li><a class ="active" href="#learning">Learnings and Reflections</a></li>
 						<li><a class ="active" href="#portfolio">Portfolio</a></li>
 						<li><a class ="active" href="#contact">Contact</a></li>
 						<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -26,7 +26,7 @@
 				</nav>
 				<div class="header-text">
 					<!-- <p>UI/UX Designer</p> -->
-					<h1>Hi, I am <span> John Bryan </span><br> Garcia from Philippines</h1>
+					<h1>Hi, I am <span>Bryan Garcia</span><br> from the Philippines</h1>
 				</div>
 			</div>
 		</div>
@@ -37,12 +37,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="about-col-1">
-						<img src="images/user1.JPG">
+						<img src="images/user1.png">
 					</div>
 					<div class="about-col-2">
 						<h1 class="sub-title">About Me</h1>
-						<p>
-                     I am a Frontend developer and an undergraduate student taking up a Bachelor of Science in Information Systems. I am flexible and cooperative when it comes to handling projects. I am experienced in windows and web development with Microsoft technologies using HTML, CSS, JavaScript and PHP. I have developed front-end and back-end websites since my first year in college, and have been working with websites my clientS own.                     
+						<p style="line-height: 20px; text-align: justify;">
+                     I am a results-driven undergraduate Information Systems student and accomplished Frontend Developer well-versed in Microsoft technologies, including HTML, CSS, JavaScript, and PHP. Through hands-on engagement in diverse frontend and backend website projects, I have cultivated a track record of client-centric solutions. My Quality Assurance background has honed my keen approach to detail and adept problem-solving, underscoring my commitment to delivering top-tier products. Eager to leverage my technical acumen and quality-focused mindset to elevate projects and contribute positively to collaborative teams.                     
 						</p>
 
 						<div class="tab-titles">
@@ -93,15 +93,19 @@
 						</div>
 						<div class="tab-contents" id="experience">
 							<ul>
-								<li><span>Intrutech Enterprises | 2019 - Current</span>
+								<li><span><b>Intrutech Enterprises | 2019 - Current</b></span>
                            <br>Website Designer and Developer</li>
+							</ul>
+                     <ul>
+								<li><span><b>SD Solutions IT Outsourcing, Inc | 2023</b></span>
+                           <br>Intern (Quality Assurance and Project Management)</li>
 							</ul>
 						</div>
 						<div class="tab-contents" id="education">
 							<ul>
-								<li><span>La Salle GreenHills | 2015 - 2018</span>
+								<li><span><b>La Salle GreenHills | 2015 - 2018</b></span>
                            <br>Science, Technology, Engineering, and Mathematics Strand (STEM)</li>
-								<li><span>De La Salle College of Saint Benilde | 2018 - Current</span>
+								<li><span><b>De La Salle College of Saint Benilde | 2018 - Current</b></span>
                            <br>Bacherlor Of Science In Information Systems</li>
 							</ul>
 						</div>
@@ -143,27 +147,165 @@
             </div>
          </div>
       </div> -->
-   
+
+   <!-- ----------Learnings --------- -->   
+
+      <div id="learning">
+         <div class="container">
+            <h1 class="learning-sub-title">Learnings and Reflections</h1> <br><br><br>
+				<div class="learning-row">
+               <div class="learning-col-1">
+						<img src="images/internship.jpg">
+					</div>
+               <div class="learning-col-2">
+                  <h1 class="learning-sub-title" style="font-size: 35px; color: #00FFFF;">Internship Learning</h1> <br>
+                  <p>
+                      During my ISP practicum at SD Solutions, I found myself drawing upon various subjects from the ISP curriculum and applying the skill sets I had acquired. Some specific examples include: 
+                   </p>
+                   <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('software')">
+                         Software Development (Programming)</p>
+                      <p class="tab-links" onclick="opentab('database')">Database Management
+                      </p>
+                      <p class="tab-links" onclick="opentab('project')">Project Management
+                      </p>
+                      <p class="tab-links" onclick="opentab('communication')">Communication Skills
+                      </p>
+                      <p class="tab-links" onclick="opentab('problem')">Problem-Solving
+                      </p>
+                   </div>
+                   <div class="tab-contents" id="software">
+                      <ul>
+                         <p>The programming skills I gained from subjects like Java and Python were directly applied in the development of software solutions for the company's projects. I was able to write efficient and clean code, address bugs, and contribute to the overall functionality of the applications.</p>
+                      </ul>
+                   </div>
+                   <div class="tab-contents" id="database">
+                      <ul>
+                         <p>
+                            Concepts from database management were instrumental in handling and organizing data within the projects. I utilized SQL to design, query, and maintain databases, ensuring that data was efficiently stored and retrievable.
+                         </p>
+                      </ul>
+                   </div>
+                   <div class="tab-contents" id="project">
+                      <ul>
+                         <p>
+                            The principles of project management learned in the curriculum were immensely valuable in organizing tasks, setting priorities, and collaborating with team members. I created project schedules, tracked progress, and communicated updates effectively, which contributed to the successful completion of milestones.
+                         </p>
+                      </ul>
+                   </div>
+                   <div class="tab-contents" id="communication">
+                      <ul>
+                         <p>
+                            The emphasis on communication skills in the curriculum facilitated clear and effective interaction with team members, supervisors, and clients. I was able to convey ideas, present my work, and address any concerns that arose during the course of the projects.
+                         </p>
+                      </ul>
+                </div>
+                <div class="tab-contents" id="problem">
+                   <ul>
+                      <p>
+                         The critical thinking and problem-solving skills developed during the curriculum helped me analyze issues that arose during development and find efficient solutions. This skill set was crucial in troubleshooting and ensuring the smooth progression of projects.
+                      </p>
+                   </ul>
+                </div>
+               </div>
+            </div>
+
+            <br><br><br><br>
+
+				<div class="learning-row-2">
+               <div class="learning-col-3">
+						<img src="images/college.jpg">
+					</div>
+               <div class="learning-col-4">
+                  <h1 class="learning-sub-title" style="font-size: 35px; color: #00FFFF;">Reflection on College Life and Career Aspirations</h1> 
+                  <br>
+                       <p style="text-align: justify;">
+                        As I look back on my college journey, I can't help but appreciate how my internship program has played a significant role in shaping my path towards achieving my career goals. This phase has been a bridge that connected the dots between the theoretical knowledge I've gained in classrooms and the practical applications in the real world. Specifically, my time interning at SD Solutions, a prominent technology company, has been enlightening, offering insights that have not only deepened my understanding of the industry but also polished my professional skills.
+                        </p>
+                        <br><br>
+               
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('bridging')">
+                        Bridging Theory and Practice
+                     </p>
+                      <p class="tab-links" onclick="opentab('personal')">Personal and Professional Growth
+                      </p>
+                      <p class="tab-links" onclick="opentab('building')">Building Valuable Connections
+                      </p>
+                      <p class="tab-links" onclick="opentab('charting')">Charting My Next Steps: Pursuing Data Security
+                      </p>
+                      <p class="tab-links" onclick="opentab('moving')">Moving Forward
+                     </p>
+                  </div>
+                  <div class="tab-contents" id="bridging">
+                      <ul>
+                         <p>One of the most valuable aspects of the internship program was its ability to close the gap between what I learned in my courses and how those concepts are actually put into action in the industry. Witnessing firsthand how the theoretical knowledge I accumulated is applied in real-world scenarios was eye-opening. This exposure illuminated the practical implications of various concepts and theories that once seemed abstract in the classroom. It's this connection between theory and practice that has given me a more comprehensive grasp of the subject matter.
+                         </p>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="personal">
+                      <ul>
+                         <p>
+                           The practicum program didn't just provide me with insights into the technical aspects of the industry, but it also nurtured my personal and professional development. Throughout this experience, I found myself acquiring essential skills that transcend any specific field. Skills such as effective communication, collaborative teamwork, analytical problem-solving, and efficient time management were all honed during this internship. These skills aren't just tools for success in the workplace; they're fundamental for my overall growth as an individual. They've equipped me to navigate challenges and opportunities not just in my chosen career but also in life.
+                         </p>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="building">
+                      <ul>
+                         <p>
+                           Another remarkable facet of the program was the chance to build a network within the industry. Interacting with professionals at SD Solutions allowed me to gain diverse perspectives and insights that I wouldn't have accessed solely through coursework. These connections I've established might prove to be invaluable as I take steps toward my future career. They've not only given me a broader understanding of the various roles within the tech industry but also provided a foundation for potential collaborations and mentorship in the future.
+                         </p>
+                      </ul>
+                   </div>
+                  <div class="tab-contents" id="charting">
+                      <ul>
+                         <p>
+                           Looking ahead, I am driven by a clear sense of purpose and commitment to pursuing a career in data security. The realization that the digital world we live in is becoming increasingly interconnected and vulnerable has spurred my passion for safeguarding sensitive information. I am eager to contribute my skills and knowledge to this critical area.
+                           <br><br>
+                           To further solidify my path, my next steps include delving deeper into the intricacies of data security. This involves not only staying updated with the latest technological advancements but also continuously enhancing my skill set through online courses, workshops, and certifications. I also plan to seek mentorship from professionals in the field who can guide me based on their own experiences.
+                         </p>
+                      </ul>
+                  </div>  
+                  <div class="tab-contents" id="moving">
+                     <ul>
+                        <p>
+                           Ultimately, I see my journey through college, my internship experience, and my commitment to data security as interconnected threads weaving a narrative of growth and purpose. I am excited to continue building on these foundations as I step into the world of data security, where each challenge is an opportunity to learn and contribute to a safer digital landscape
+                        </p>
+                     </ul>
+                  </div> 
+               </div>
+            </div>
+         </div>
+      </div>
+
    <!-- ----------portfolio--------- -->
 
       <div id="portfolio">
          <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">My Work and Experiences</h1>
             <div class="work-list">
                <div class="work">
                   <img src="images/work1.jpg">
                   <div class="layer">
                      <h3>JITENSHA</h3>
-                     <p>Jitensha is the result of our major capstone during my academic year. Jitensha is a platform that aims to help bike users to build their ideal bike. Jitensha offers to help these users to identify what kind of bike they should build.</p>
-                     <a href="https://jitensha.store"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                     <p>Jitensha embodies the culmination of my academic journey, signifying a pivotal capstone achievement. This platform empowers cycling enthusiasts to curate bespoke bicycles. By harnessing intelligent algorithms and user-centric design, Jitensha assists users in tailoring their ideal bike through data-driven component recommendations. This project underscores my commitment to precision and user satisfaction.</p>
+                     <a href="images/ISPROJ2.pdf"><i class="fa-solid fa-up-right-from-square"></i></i></a>
                   </div>
                </div>
                <div class="work">
                   <img src="images/work2.jpg">
                   <div class="layer">
                      <h3>Intrutech Enterprises</h3>
-                     <p>A personal website of a small to medium sized business owned by my relatives . It is consist of the background of the company, product and service offerings, and the contact information of the organization.</p>
-                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                     <p>At Intrutech Enterprises, I played a key role in establishing their digital presence. Through meticulous web development, I facilitated the portrayal of the company's history, products, services, and contact details. By offering clients a clear online pathway, I contributed to enriching their engagement and potentially fostering business growth.</p>
+                     <a href="/images/intrutech/index.html"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                  </div>				
+               </div>
+               <div class="work">
+                  <img src="images/work3.jpg">
+                  <div class="layer">
+                     <h3>SD Solutions</h3>
+                     <p>During my internship with SD Solutions, I engaged deeply in quality assurance and project management. I actively participated in refining operational processes and optimizing project workflows. This practical exposure solidified my grasp of project life cycles, quality assessment practices, and effective team collaboration.</p>
+                     <a href="https://www.sdsolutions.com.ph"><i class="fa-solid fa-up-right-from-square"></i></i></a>
                   </div>				
                </div>
             </div>
@@ -199,6 +341,9 @@
                </div>
             </div>
          </div>
+         <div class="top">
+            <a href="#" class="btn btn2"><i class="fa fa-arrow-up academic"></i> To the top</a>
+          </div>
          <div class="copyright">
             <p>Copyright © Bryan. Made by <i class="fa-solid fa-ghost"></i> John Bryan Garcia</p>
          </div>
