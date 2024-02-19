@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <div lang="en">
-<head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>John Bryan Garcia</title>
-   <link rel="icon" href="images/icon.png" size="30x30">
+   <link rel="icon" type="image/png" href="/images/icon.png">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+   <script src="js/app.js"></script>
    <script src="https://kit.fontawesome.com/a5c9fce646.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +18,7 @@
 					<ul id="sidemenu" style="font-weight: bold;">
 						<li><a class ="active" href="#header">Home</a></li>
 						<li><a class ="active" href="#about">About</a></li>
-						<li><a class ="active" href="#learning">Learnings and Reflections</a></li>
+						<!-- <li><a class ="active" href="#learning">Learnings and Reflections</a></li> -->
 						<li><a class ="active" href="#portfolio">Portfolio</a></li>
 						<li><a class ="active" href="#contact">Contact</a></li>
 						<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -293,7 +294,7 @@
                   </div>
                </div>
                <div class="work">
-                  <img src="images/work2.jpg">
+                  <img src="images/work2.png">
                   <div class="layer">
                      <h3>Intrutech Enterprises</h3>
                      <p>At Intrutech Enterprises, I played a key role in establishing their digital presence. Through meticulous web development, I facilitated the portrayal of the company's history, products, services, and contact details. By offering clients a clear online pathway, I contributed to enriching their engagement and potentially fostering business growth.</p>
@@ -301,11 +302,19 @@
                   </div>				
                </div>
                <div class="work">
-                  <img src="images/work3.jpg">
+                  <img src="images/work3.png">
                   <div class="layer">
                      <h3>SD Solutions</h3>
                      <p>During my internship with SD Solutions, I engaged deeply in quality assurance and project management. I actively participated in refining operational processes and optimizing project workflows. This practical exposure solidified my grasp of project life cycles, quality assessment practices, and effective team collaboration.</p>
                      <a href="https://www.sdsolutions.com.ph"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                  </div>				
+               </div>
+               <div class="work">
+                  <img src="images/work4.png">
+                  <div class="layer">
+                     <h3>Achieve Without Borders</h3>
+                     <p>During my stay in Achieve Without Borders, I implemented manual test cases to identify software defects and developed validated test script designs for comprehensive testing, adhering to industry best practices. My contribution ensures the delivery of high-quality software solutions through precise and effective testing strategies.</p>
+                     <a href="https://www.achievewithoutborders.com"><i class="fa-solid fa-up-right-from-square"></i></i></a>
                   </div>				
                </div>
             </div>
@@ -345,79 +354,9 @@
             <a href="#" class="btn btn2"><i class="fa fa-arrow-up academic"></i> To the top</a>
           </div>
          <div class="copyright">
-            <p>Copyright © Bryan. Made by <i class="fa-solid fa-ghost"></i> John Bryan Garcia</p>
+            <p>Copyright © John Bryan Garcia. All Rights Reserved</p>
          </div>
       </div>
-
-      <script>
-
-         var tablinks = document.getElementsByClassName("tab-links");
-         var tabcontents = document.getElementsByClassName("tab-contents");
-
-         function opentab(tabname) {
-            for (tablink of tablinks) {
-               tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-               tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-         }
-
-      </script> 
-
-      <script>
-
-         var sidemeu = document.getElementById("sidemenu");
-
-         function openmenu() {
-            sidemeu.style.right = "0";
-         }
-         function closemenu() {
-            sidemeu.style.right = "-200px";
-         }
-
-
-      </script>
-
-      <script>
-
-         const scriptURL = 'https://script.google.com/macros/s/AKfycbwsn_F8hlT0OFClbGILVR_M6lGjpLUfhtsiupMKjV8Y7WefDnXGg82l5g-r0pTb4MYh/exec'
-         const form = document.forms['submit-to-google-sheet']
-         const msg = document.getElementById("msg")
-      
-         form.addEventListener('submit', e => {
-         e.preventDefault()
-         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-               msg.innerHTML = "Message sent successfully"
-               setTimeout(function() {
-                  msg.innerHTML =  ""
-               },5000)
-               form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-         })
-
-      </script>
-
-      <script>
-
-         window.onscroll = function() {myFunction()};
-         
-         var navbar = document.getElementById("container");
-         var sticky = navbar.offsetTop;
-         
-         function myFunction() {
-         if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-         } else {
-            navbar.classList.remove("sticky");
-         }
-         }
-
-      </script>
 
 </body>
 </html>
