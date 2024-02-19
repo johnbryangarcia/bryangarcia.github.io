@@ -299,13 +299,13 @@ nav ul li a:hover::after {
 }
 
 .progress-line .html {
-  width: 75%;
-}
-.progress-line .css {
   width: 60%;
 }
+.progress-line .css {
+  width: 55%;
+}
 .progress-line .bootstrap {
-  width: 70%;
+  width: 40%;
 }
 .progress-line .javascript {
   width: 30%;
@@ -341,13 +341,13 @@ nav ul li a:hover::after {
 }
 
 .progress-line .html::after {
-  content: "75%";
-}
-.progress-line .css::after {
   content: "60%";
 }
+.progress-line .css::after {
+  content: "55%";
+}
 .progress-line .bootstrap::after {
-  content: "70%";
+  content: "40%";
 }
 .progress-line .javascript::after {
   content: "30%";
